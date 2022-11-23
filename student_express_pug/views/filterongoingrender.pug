@@ -1,0 +1,11 @@
+extends layout
+
+block content 
+    each x in ongoing 
+        h3 #{x.name}
+        ul
+            li Department: #{x.dept}
+            li Remaining Spots: #{x.remaining}
+        p.description #{x.desc}
+
+        h5 Course Id: #{x.id}

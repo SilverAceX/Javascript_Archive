@@ -1,0 +1,20 @@
+extends layout
+
+block content 
+    form(method="post" enctype="multipart/form-data") 
+        div.in_width.form-group
+            label(for="s_id") Student Id 
+            input.form-control(type="text" placeholder='Student id' name='s_id')
+        div.in_width.form-group
+            label(for="name") Name
+            input.form-control(type="text" placeholder='Name' name='name')
+        div.in_width.form-group
+            label(for="dept") Department
+            input.form-control(type="text" placeholder='Department' name='dept')
+        div.in_width.form-group
+            label(for="enrolled") Enrolled Course
+            input.form-control(type="text" placeholder='Course name' name='enrolled')
+        div.in_width.form-group
+            label(for="completed") Completed Course
+            input.form-control(type="text" placeholder='Course name' name='completed')
+        button.btn.btn-primary(type="submit") Submit

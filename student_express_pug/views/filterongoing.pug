@@ -1,0 +1,17 @@
+extends layout
+
+block content 
+    form(method="post" enctype="multipart/form-data") 
+        div.in_width.form-group
+            label(for="id") Id
+            input.form-control(type="text" placeholder='Id' name='id')
+        div.in_width.form-group
+            label(for="name") Name
+            input.form-control(type="text" placeholder='Name' name='name')
+        div.in_width.form-group
+            label(for="dept") Department
+            input.form-control(type="text" placeholder='Department' name='dept')
+        div.in_width.form-group
+            label(for="remain") Remaining
+            input.spacing(type="checkbox" name='remain' value="1")
+        button.btn.btn-primary(type="submit") Submit

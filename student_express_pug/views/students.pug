@@ -1,0 +1,22 @@
+extends layout
+
+block content 
+    .row
+    each x in allStudents 
+        .container.col-sm 
+            h2.cardName #{x.name}
+            h4 Student Info
+            ul.infoList
+                li Department: #{x.dept}
+                li Semester #{x.semester}
+                h4 Courses Enrolled
+                ul.courses
+                    each course in x.courses_enrolled
+                        li #{course.name}
+
+                h4 Courses Completed
+                ul.courses
+                    each course in x.courses_completed
+                        li #{course.name}
+            h5 Student Id: #{x.id}
+        hr
